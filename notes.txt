@@ -1,3 +1,13 @@
 1. Initialize and create the server in the socket.js
 2. For making the client side we use the Context Api as it refers to the same instance of Socket everytime.
-3. 
+
+3. Establishing the peer js library using the custom hooks usePeer.js
+
+- We cannot import the library such as peerjs in the next js as next always try to run the packages on the server side and server don't have the webapi so our package will crash 
+so for the solution we can use or import the library such as peer js move inside the useEffect
+(another solution is to move the application to server side)
+
+- To start the peerjs 
+peerjs --port 3001
+
+4. creating a room for queryParams [roomId].js in this all the socket and peerjs function are calling and Initializing.
