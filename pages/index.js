@@ -10,6 +10,7 @@ export default function Home() {
 
   const createAndJoin = () => {
     const roomId = uuidv4(); // generate the random id
+    console.log("Room Id", roomId);
     router.push(`/${roomId}`);
   };
 
