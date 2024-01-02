@@ -2,13 +2,17 @@
 
 import { Server } from "socket.io";
 
+// this is an api so we need to called it explicitly
 const SocketHandler = (req, res) => {
+  console.log("called api");
+
   if (res.socket.server.io) {
     console.log("Server is already setup");
   } else {
     const io = new Server(res.socket.server);
     res.socket.server.io = io;
   }
+
   io.on("connection", (socket) => {
     console.log("server is connected!");
   });
