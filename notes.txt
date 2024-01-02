@@ -10,4 +10,7 @@ so for the solution we can use or import the library such as peer js move inside
 - To start the peerjs 
 peerjs --port 3001
 
-4. creating a room for queryParams [roomId].js in this all the socket and peerjs function are calling and Initializing.
+4. Creating a room for queryParams [roomId].js in this all the socket and peerjs function are calling and Initializing.
+
+5. Working on the index.js file making the ui and logic for joining in the room
+
